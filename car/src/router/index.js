@@ -4,6 +4,10 @@ import Index from './../components/index/index'
 import All from './../components/car-all/all'
 import Shop from './../components/ch_shop/shop'
 
+import Bills from './../components/cgy-bills/bills'
+import TopUp from './../components/topUp/topUp'
+import Autonym from './../components/autonym/autonym'
+
 import Details from '../components/ch_details/details'
 import Done from '../components/ch_done/done.vue'
 import Wallet from '../components/ch_wallet/wallet.vue'
@@ -39,6 +43,19 @@ export default new Router({
     },
     {
 
+      path:'/bills',
+      component:Bills
+    },
+    {
+      path:'/topUp',
+      component:TopUp
+    },
+    {
+      path:'/autonym',
+      component:Autonym
+    },
+
+    {
       path:'/details',
       component:Details
     },
@@ -57,8 +74,8 @@ export default new Router({
     {
       path:'/comment',
       component:Comments
-    }
-
+    },
+    {
       path:'/login',
       component:Login
     },
@@ -86,6 +103,7 @@ export default new Router({
         },
       ]
     },
+
 
 
   ]
